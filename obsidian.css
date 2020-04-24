@@ -286,3 +286,9 @@ img
     background-color: var(--background-secondary);
 }
 
+.empty-state-container:hover
+{
+    background-color: var(--background-secondary-alt);
+    border: 5px solid var(--interactive-accent) !important;
+}
+
