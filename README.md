@@ -7,3 +7,7 @@ This is a [gruvbox](https://github.com/morhetz/gruvbox) theme for
 Simply copy the `obsidian.css` file to your vault directory and reload
 Obsidian for it to take effect.
 
+![](dark.png)
+
+![](light.png)
+
