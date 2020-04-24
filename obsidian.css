@@ -281,3 +281,8 @@ img
     border-bottom-left-radius: 4px;
 }
 
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
