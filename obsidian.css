@@ -21,6 +21,8 @@
     --interactive-accent: #fe8019; /* light orange */
     --interactive-before: #7c6f64; /* bg4 */
     --background-modifier-border: #504945; /* bg2 */
+    --text-accent: #fe8019; /* light orange */
+    --interactive-accent-rgb: #fe8019; /* light orange */
 }
 
 .theme-light
@@ -45,6 +47,13 @@
     --interactive-accent: #d65d0e; /* light orange */
     --interactive-before: #a89984; /* bg4 */
     --background-modifier-border: #d5c4a1; /* bg2 */
+    --text-accent: #d65d0e; /* light orange */
+    --interactive-accent-rgb: #d65d0e; /* light orange */
+}
+
+#graph-view-canvas .links
+{
+    stroke: var(--interactive-accent-rgb) !important;
 }
 
 .checkbox-container
@@ -169,6 +178,7 @@ img
 
 .side-dock-ribbon-tab:hover,
 .side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
 .side-dock-collapse-btn:hover
 {
