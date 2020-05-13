@@ -1,54 +1,103 @@
 
+:root
+{
+    --dark0-hard:     #1d2021;
+    --dark0:          #282828;
+    --dark0-soft:     #32302f;
+    --dark1:          #3c3836;
+    --dark2:          #504945;
+    --dark3:          #665c54;
+    --dark4:          #7c6f64;
+
+    --gray:           #928374;
+
+    --light0-hard:    #f9f5d7;
+    --light0:         #fbf1c7;
+    --light0-soft:    #f2e5bc;
+    --light1:         #ebdbb2;
+    --light2:         #d5c4a1;
+    --light3:         #bdae93;
+    --light4:         #a89984;
+
+    --bright-red:     #fb4934;
+    --bright-green:   #b8bb26;
+    --bright-yellow:  #fabd2f;
+    --bright-blue:    #83a598;
+    --bright-purple:  #d3869b;
+    --bright-aqua:    #8ec07c;
+    --bright-orange:  #fe8019;
+
+    --neutral-red:    #cc241d;
+    --neutral-green:  #98971a;
+    --neutral-yellow: #d79921;
+    --neutral-blue:   #458588;
+    --neutral-purple: #b16286;
+    --neutral-aqua:   #689d6a;
+    --neutral-orange: #d65d0e;
+
+    --faded-red:      #9d0006;
+    --faded-green:    #79740e;
+    --faded-yellow:   #b57614;
+    --faded-blue:     #076678;
+    --faded-purple:   #8f3f71;
+    --faded-aqua:     #427b58;
+    --faded-orange:   #af3a03;
+}
+
 .theme-dark
 {
-    --background-primary: #282828; /* bg */
-    --background-primary-alt: #282828; /* bg */
-    --background-secondary: #1d2021; /* bg0_h */
-    --background-secondary-alt: #3c3836; /* bg1 */
-    --text-normal: #fbf1c7; /* fg0 */
-    --text-faint: #bdae93; /* fg3 */
-    --text-title-h1: #cc241d; /* dark red */
-    --text-title-h2: #d65d0e; /* dark orange */
-    --text-title-h3: #d79921; /* dark yellow */
-    --text-title-h4: #98971a; /* dark green */
-    --text-title-h5: #689d6a; /* dark aqua */
-    --text-link: #83a598; /* light blue */
-    --text-a: #fe8019; /* light orange  */
-    --text-a-hover: #83a598; /* light blue  */
-    --text-mark: #d79921; /* dark yellow */
-    --pre-code: #3c3836; /* bg1 */
-    --text-highlight-bg: #689d6a; /* dark aqua */
-    --interactive-accent: #fe8019; /* light orange */
-    --interactive-before: #7c6f64; /* bg4 */
-    --background-modifier-border: #504945; /* bg2 */
-    --text-accent: #fe8019; /* light orange */
-    --interactive-accent-rgb: #fe8019; /* light orange */
+    --background-primary:         var(--dark0);
+    --background-primary-alt:     var(--dark0);
+    --background-secondary:       var(--dark0-hard);
+    --background-secondary-alt:   var(--dark1);
+    --text-normal:                var(--light0);
+    --text-faint:                 var(--light3);
+    --text-title-h1:              var(--neutral-red);
+    --text-title-h2:              var(--neutral-orange);
+    --text-title-h3:              var(--neutral-yellow);
+    --text-title-h4:              var(--neutral-green);
+    --text-title-h5:              var(--neutral-aqua);
+    --text-link:                  var(--bright-blue);
+    --text-a:                     var(--bright-orange);
+    --text-a-hover:               var(--bright-blue);
+    --text-mark:                  var(--neutral-yellow);
+    --pre-code:                   var(--dark1);
+    --text-highlight-bg:          var(--faded-aqua);
+    --interactive-accent:         var(--bright-orange);
+    --interactive-before:         var(--dark4);
+    --background-modifier-border: var(--dark2);
+    --text-accent:                var(--bright-orange);
+    --interactive-accent-rgb:     var(--bright-orange);
+    --inline-code:                var(--bright-blue);
+    --vim-cursor:                 var(--bright-orange);
 }
 
 .theme-light
 {
-    --background-primary: #fbf1c7; /* bg */
-    --background-primary-alt: #fbf1c7; /* bg */
-    --background-secondary: #f9f5d7; /* bg0_h */
-    --background-secondary-alt: #ebdbb2; /* bg1 */
-    --text-normal: #282828; /* fg0 */
-    --text-faint: #665c54; /* fg3 */
-    --text-title-h1: #9d0006; /* dark red */
-    --text-title-h2: #af3a03; /* dark orange */
-    --text-title-h3: #b57614; /* dark yellow */
-    --text-title-h4: #79740e; /* dark green */
-    --text-title-h5: #427b58; /* dark aqua */
-    --text-link: #458588; /* light blue */
-    --text-a: #d65d0e; /* light orange */
-    --text-a-hover: #458588; /* light blue */
-    --text-mark: #d79921; /* light yellow */
-    --pre-code: #ebdbb2; /* bg1 */
-    --text-highlight-bg: #689d6a; /* light aqua */
-    --interactive-accent: #d65d0e; /* light orange */
-    --interactive-before: #a89984; /* bg4 */
-    --background-modifier-border: #d5c4a1; /* bg2 */
-    --text-accent: #d65d0e; /* light orange */
-    --interactive-accent-rgb: #d65d0e; /* light orange */
+    --background-primary:         var(--light0);
+    --background-primary-alt:     var(--light0);
+    --background-secondary:       var(--light0-hard);
+    --background-secondary-alt:   var(--light1);
+    --text-normal:                var(--dark0);
+    --text-faint:                 var(--dark3);
+    --text-title-h1:              var(--faded-red);
+    --text-title-h2:              var(--faded-orange);
+    --text-title-h3:              var(--faded-yellow);
+    --text-title-h4:              var(--faded-green);
+    --text-title-h5:              var(--faded-aqua);
+    --text-link:                  var(--neutral-blue);
+    --text-a:                     var(--neutral-orange);
+    --text-a-hover:               var(--neutral-blue);
+    --text-mark:                  var(--neutral-yellow);
+    --pre-code:                   var(--light1);
+    --text-highlight-bg:          var(--bright-aqua);
+    --interactive-accent:         var(--neutral-orange);
+    --interactive-before:         var(--light4);
+    --background-modifier-border: var(--light2);
+    --text-accent:                var(--neutral-orange);
+    --interactive-accent-rgb:     var(--neutral-orange);
+    --inline-code:                var(--neutral-blue);
+    --vim-cursor:                 var(--neutral-orange);
 }
 
 #graph-view-canvas .links
@@ -197,7 +246,7 @@ pre
 
 .markdown-preview-section code
 {
-    color: var(--text-a-hover) !important;
+    color: var(--inline-code) !important;
 }
 
 .cm-s-obsidian,
@@ -209,7 +258,7 @@ pre
 
 .cm-inline-code
 {
-    color: var(--text-a-hover) !important;
+    color: var(--inline-code) !important;
     background-color: var(--pre-code) !important;
     padding: 1px !important;
 }
@@ -348,7 +397,7 @@ pre
 
 .CodeMirror-cursor
 {
-    background-color: var(--text-a) !important;
+    background-color: var(--vim-cursor) !important;
     opacity: 60% !important;
 }
 
