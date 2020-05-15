@@ -46,6 +46,7 @@
 
 .theme-dark
 {
+    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace;
     --background-primary:         var(--dark0);
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--dark0-hard);
@@ -69,6 +70,7 @@
     --text-accent:                var(--bright-orange);
     --interactive-accent-rgb:     var(--bright-orange);
     --inline-code:                var(--bright-blue);
+    --code-block:                 var(--bright-blue);
     --vim-cursor:                 var(--bright-orange);
 }
 
@@ -98,6 +100,15 @@
     --interactive-accent-rgb:     var(--neutral-orange);
     --inline-code:                var(--neutral-blue);
     --vim-cursor:                 var(--neutral-orange);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
 }
 
 #graph-view-canvas .links
@@ -152,6 +163,7 @@ mark
     padding-left: 4px !important;
     padding-right: 4px !important;
     background-color: var(--pre-code) !important;
+    color: var(--code-block) !important;
 }
 
 .HyperMD-codeblock-begin
@@ -232,7 +244,6 @@ pre
 .markdown-preview-section code
 {
     font-size: 0.9em !important;
-    font-family: 'Hack Nerd Font', monospace !important;
     background-color: var(--pre-code) !important;
 }
 
@@ -241,7 +252,7 @@ pre
     padding: 4px !important;
     line-height: 1.4em !important;
     display: block !important;
-    color: var(--text-normal) !important;
+    color: var(--code-block) !important;
 }
 
 .markdown-preview-section code
@@ -252,7 +263,6 @@ pre
 .cm-s-obsidian,
 .cm-inline-code
 {
-    font-family: 'Hack Nerd Font', monospace !important;
     -webkit-font-smoothing: auto !important;
 }
 
