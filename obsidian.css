@@ -233,11 +233,14 @@ img
     margin-right: auto !important;
 }
 
-pre
+.HyperMD-list-line
 {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+.cm-formatting
+{
+    font-family: var(--font-monospace) !important;
 }
 
 .markdown-preview-section pre code,
