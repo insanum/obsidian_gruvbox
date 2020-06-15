@@ -326,11 +326,11 @@ img
     padding-right: 10px !important;
 }
 
-.cm-s-obsidian,
-.markdown-preview-view,
-.workspace-leaf-header
-{
-    border-left: 1px solid var(--background-secondary-alt) !important;
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle{
+    width: 1px !important;
+    background-color: var(--background-secondary-alt);
 }
 
 .markdown-embed-title
