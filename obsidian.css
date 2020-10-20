@@ -72,7 +72,7 @@
     --inline-code:                var(--bright-blue);
     --code-block:                 var(--bright-blue);
     --vim-cursor:                 var(--bright-orange);
-    --text-selection:             var(--dark3);
+    --text-selection:             rgba(168, 153, 132, 0.5); /* light4 */
 }
 
 .theme-light
@@ -101,7 +101,7 @@
     --interactive-accent-rgb:     var(--neutral-orange);
     --inline-code:                var(--neutral-blue);
     --vim-cursor:                 var(--neutral-orange);
-    --text-selection:             var(--light2);
+    --text-selection:             rgba(189, 174, 147, 0.5); /* light3 */
 }
 
 .theme-dark code[class*="language-"],
@@ -455,8 +455,14 @@ input.task-list-item-checkbox {
     -webkit-appearance: none;
 }
 
-input.task-list-item-checkbox:checked {
+input.task-list-item-checkbox:checked
+{
     background-color: var(--dark4);
     box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+::selection
+{
+    background-color: var(--text-selection) !important;
 }
 
