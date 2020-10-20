@@ -61,7 +61,7 @@
     --text-link:                  var(--bright-blue);
     --text-a:                     var(--bright-orange);
     --text-a-hover:               var(--bright-blue);
-    --text-mark:                  var(--neutral-yellow);
+    --text-mark:                  rgba(215, 153, 33, 0.4); /* neutral-yellow */
     --pre-code:                   var(--dark1);
     --text-highlight-bg:          var(--faded-aqua);
     --interactive-accent:         var(--bright-orange);
@@ -91,7 +91,7 @@
     --text-link:                  var(--neutral-blue);
     --text-a:                     var(--neutral-orange);
     --text-a-hover:               var(--neutral-blue);
-    --text-mark:                  var(--neutral-yellow);
+    --text-mark:                  rgba(215, 153, 33, 0.4); /* neutral-yellow */
     --pre-code:                   var(--light1);
     --text-highlight-bg:          var(--bright-aqua);
     --interactive-accent:         var(--neutral-orange);
@@ -163,7 +163,6 @@ a:hover,
 mark
 {
     background-color: var(--text-mark) !important;
-    color: var(--dark0) !important;
 }
 
 .view-actions a
