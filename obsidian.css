@@ -436,6 +436,12 @@ img
     font-weight: 600 !important;
 }
 
+.mod-cta a
+{
+    color: var(--background-secondary-alt) !important;
+    font-weight: 600 !important;
+} 
+
 .mod-cta:hover
 {
     background-color: var(--interactive-before) !important;
