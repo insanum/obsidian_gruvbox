@@ -258,10 +258,12 @@ img
     padding-top: 0 !important;
 }
 
+.CodeMirror-code,
 .CodeMirror-linenumber,
 .cm-formatting
 {
     font-family: var(--font-monospace) !important;
+    font-size: 0.9em;
 }
 
 .markdown-preview-section pre code,
@@ -331,7 +333,7 @@ img
 
 /* vertical resize-handle */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle
 {
     width: 1px !important;
@@ -440,7 +442,7 @@ img
 {
     color: var(--background-secondary-alt) !important;
     font-weight: 600 !important;
-} 
+}
 
 .mod-cta:hover
 {
@@ -469,5 +471,10 @@ input.task-list-item-checkbox:checked
 ::selection
 {
     background-color: var(--text-selection) !important;
+}
+
+.mermaid .note
+{
+    fill: var(--dark3) !important;
 }
 
