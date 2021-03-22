@@ -42,11 +42,16 @@
     --faded-purple:   #8f3f71;
     --faded-aqua:     #427b58;
     --faded-orange:   #af3a03;
+    
+    --default-font: Ubuntu;
 }
 
 .theme-dark
 {
-    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace;
+    --font-sans: var(--default-font), 'Fira Sans Condensed';
+    --font-nav: var(--default-font), 'Google Sans', 'Fira Sans';
+    --font-monospace: 'mplus Nerd Font', 'Hack Nerd Font', 'Source Code Pro', monospace;
+    --font-size: 0.9em;
     --background-primary:         var(--dark0);
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--dark0-hard);
@@ -240,6 +245,7 @@ thead
 
 .nav-file-title
 {
+    font-family: var(--font-nav);
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     border-top-left-radius: 0 !important;
@@ -262,8 +268,8 @@ img
 .CodeMirror-linenumber,
 .cm-formatting
 {
-    font-family: var(--font-monospace) !important;
-    font-size: 0.9em;
+    font-family: var(--font-sans) !important;
+    font-size: var(--font-size);
 }
 
 .markdown-preview-section pre code,
@@ -279,6 +285,7 @@ img
     line-height: 1.4em !important;
     display: block !important;
     color: var(--code-block) !important;
+    font-family: var(--font-monospace) !important;
 }
 
 .markdown-preview-section code
@@ -294,6 +301,7 @@ img
 
 .cm-inline-code
 {
+    font-family: var(--font-monospace) !important;
     color: var(--inline-code) !important;
     background-color: var(--pre-code) !important;
     padding: 1px !important;
@@ -329,6 +337,7 @@ img
 {
     /* padding-left: 10px !important; */
     padding-right: 10px !important;
+    font-family: var(--font-sans) !important;
 }
 
 /* vertical resize-handle */
