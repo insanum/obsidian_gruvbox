@@ -176,6 +176,15 @@ mark
     background-color: var(--text-mark) !important;
 }
 
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
 .view-actions a
 {
     color: var(--text-normal) !important;
