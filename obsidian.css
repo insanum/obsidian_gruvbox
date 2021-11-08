@@ -435,6 +435,11 @@ thead
     border: 5px solid var(--interactive-accent) !important;
 }
 
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
 .checkbox-container
 {
     background-color: var(--interactive-before);
