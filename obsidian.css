@@ -57,6 +57,7 @@
     --text-title-h3:              var(--neutral-yellow);
     --text-title-h4:              var(--neutral-green);
     --text-title-h5:              var(--neutral-aqua);
+    --text-title-h6:              var(--neutral-blue);
     --text-link:                  var(--bright-blue);
     --text-a:                     var(--bright-orange);
     --text-a-hover:               var(--bright-blue);
@@ -89,6 +90,7 @@
     --text-title-h3:              var(--faded-yellow);
     --text-title-h4:              var(--faded-green);
     --text-title-h5:              var(--faded-aqua);
+    --text-title-h6:              var(--faded-blue);
     --text-link:                  var(--neutral-blue);
     --text-a:                     var(--neutral-orange);
     --text-a-hover:               var(--neutral-blue);
@@ -119,7 +121,6 @@
 
 .markdown-source-view {
   font-family: var(--editor-font);
-  font-size: 0.9em;
 }
 
 .markdown-preview-view {
@@ -159,7 +160,7 @@
 html,
 body
 {
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
 }
 
 strong
@@ -396,7 +397,7 @@ thead
 .markdown-preview-section h1
 {
     font-weight: 500 !important;
-    font-size: 34px !important;
+    font-size: 2.2em !important;
     color: var(--text-title-h1) !important;
 }
 
@@ -404,7 +405,7 @@ thead
 .markdown-preview-section h2
 {
     font-weight: 500 !important;
-    font-size: 26px !important;
+    font-size: 2.0em !important;
     color: var(--text-title-h2) !important;
 }
 
@@ -412,7 +413,7 @@ thead
 .markdown-preview-section h3
 {
     font-weight: 500 !important;
-    font-size: 22px !important;
+    font-size: 1.8em !important;
     color: var(--text-title-h3) !important;
 }
 
@@ -420,18 +421,24 @@ thead
 .markdown-preview-section h4
 {
     font-weight: 500 !important;
-    font-size: 20px !important;
+    font-size: 1.6em !important;
     color: var(--text-title-h4) !important;
 }
 
 .cm-header-5,
+.markdown-preview-section h5
+{
+    font-weight: 500 !important;
+    font-size: 1.4em !important;
+    color: var(--text-title-h5) !important;
+}
+
 .cm-header-6,
-.markdown-preview-section h5,
 .markdown-preview-section h6
 {
     font-weight: 500 !important;
-    font-size: 18px !important;
-    color: var(--text-title-h5) !important;
+    font-size: 1.2em !important;
+    color: var(--text-title-h6) !important;
 }
 
 .suggestion-item.is-selected
