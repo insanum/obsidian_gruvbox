@@ -290,6 +290,11 @@ thead
     padding-top: 0 !important;
 }
 
+.cm-hashtag
+{
+    color: var(--text-tag) !important;
+}
+
 .markdown-preview-section pre code,
 .markdown-preview-section code
 {
