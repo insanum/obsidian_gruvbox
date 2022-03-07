@@ -431,8 +431,11 @@ h6 a
     color: var(--text-title-h6) !important;
 }
 
+.cm-header {
+    font-weight: 500 !important;
+}
 
-.cm-header-1,
+.HyperMD-header-1,
 .markdown-preview-section h1
 {
     font-weight: 500 !important;
@@ -440,7 +443,7 @@ h6 a
     color: var(--text-title-h1) !important;
 }
 
-.cm-header-2,
+.HyperMD-header-2,
 .markdown-preview-section h2
 {
     font-weight: 500 !important;
@@ -448,7 +451,7 @@ h6 a
     color: var(--text-title-h2) !important;
 }
 
-.cm-header-3,
+.HyperMD-header-3,
 .markdown-preview-section h3
 {
     font-weight: 500 !important;
@@ -456,7 +459,7 @@ h6 a
     color: var(--text-title-h3) !important;
 }
 
-.cm-header-4,
+.HyperMD-header-4,
 .markdown-preview-section h4
 {
     font-weight: 500 !important;
@@ -464,7 +467,7 @@ h6 a
     color: var(--text-title-h4) !important;
 }
 
-.cm-header-5,
+.HyperMD-header-5,
 .markdown-preview-section h5
 {
     font-weight: 500 !important;
@@ -472,7 +475,7 @@ h6 a
     color: var(--text-title-h5) !important;
 }
 
-.cm-header-6,
+.HyperMD-header-6,
 .markdown-preview-section h6
 {
     font-weight: 500 !important;
