@@ -489,3 +489,138 @@ pre[class*="language-"]
     background-color: var(--dataview-value-background) !important;
 }
 
+/* ========================================================================= */
+/* CALLOUT THEMING : DARK MODE */
+/* ========================================================================= */
+
+body {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.3;
+}
+
+div[data-callout-fold] {
+    box-shadow: 0px 1px 3px rgb(11, 14, 14);
+}
+
+.callout[data-callout="note"] {
+    --callout-color: 146, 131, 116;
+}
+
+.callout[data-callout="abstract"] {
+    --callout-color: 69, 133, 136;
+}
+
+.callout[data-callout="info"] {
+    --callout-color: 69, 133, 136;
+}
+
+.callout[data-callout="todo"] {
+    --callout-color: 215, 153, 33;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+    --callout-color: 104, 157, 106;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+    --callout-color: 152, 151, 26;
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+    --callout-color: 104, 157, 106;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+    --callout-color: 214, 93, 14;
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+    --callout-color: 204, 36, 29;
+}
+
+.callout[data-callout="bug"] {
+    --callout-color: 177, 98, 134;
+}
+
+.callout[data-callout="example"] {
+    --callout-color: 177, 98, 134;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+    --callout-color: 146, 131, 116;
+}
+
+/* ========================================================================= */
+/* CALLOUT THEMING : LIGHT MODE */
+/* ========================================================================= */
+
+.theme-light div[data-callout-fold] {
+    box-shadow: 0px 1px 2px rgb(213, 196, 161);
+}
+
+.theme-light .callout[data-callout="abstract"],
+.theme-light .callout[data-callout="summary"],
+.theme-light .callout[data-callout="tldr"] {
+    --callout-color: 7, 102, 120;
+}
+
+.theme-light .callout[data-callout="info"] {
+    --callout-color: 7, 102, 120;
+}
+
+.theme-light .callout[data-callout="todo"] {
+    --callout-color: 181, 118, 20;
+}
+
+.theme-light .callout[data-callout="tip"],
+.theme-light .callout[data-callout="hint"],
+.theme-light .callout[data-callout="important"] {
+    --callout-color: 66, 123, 88;
+}
+
+.theme-light .callout[data-callout="success"],
+.theme-light .callout[data-callout="check"],
+.theme-light .callout[data-callout="done"] {
+    --callout-color: 121, 116, 14;
+}
+
+.theme-light .callout[data-callout="question"],
+.theme-light .callout[data-callout="help"],
+.theme-light .callout[data-callout="faq"] {
+    --callout-color: 66, 123, 88;
+}
+
+.theme-light .callout[data-callout="warning"],
+.theme-light .callout[data-callout="caution"],
+.theme-light .callout[data-callout="attention"] {
+    --callout-color: 175, 58, 3;
+}
+
+.theme-light .callout[data-callout="failure"],
+.theme-light .callout[data-callout="fail"],
+.theme-light .callout[data-callout="missing"],
+.theme-light .callout[data-callout="danger"],
+.theme-light .callout[data-callout="error"] {
+    --callout-color: 157, 0, 6;
+}
+
+.theme-light .callout[data-callout="bug"] {
+    --callout-color: 143, 63, 113;
+}
+
+.theme-light .callout[data-callout="example"] {
+    --callout-color: 143, 63, 113;
+}
