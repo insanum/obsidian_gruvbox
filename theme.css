@@ -180,6 +180,8 @@ body
     --code-background:               var(--dark1);
 
     --mermaid-note:                  var(--neutral-blue);
+    --mermaid-actor:                 var(--dark2);
+    --mermaid-loopline:              var(--neutral-blue);
 
     --icon-color-hover:              var(--bright-red);
     --icon-color-focused:            var(--bright-blue);
@@ -279,6 +281,7 @@ body
 
     --mermaid-note:                  var(--bright-blue);
     --mermaid-actor:                 var(--light3);
+    --mermaid-loopline:              var(--neutral-blue);
 
     --icon-color-hover:              var(--bright-red);
     --icon-color-focused:            var(--bright-blue);
@@ -342,6 +345,7 @@ td
 {
     background-color: var(--table-row-background-hover) !important;
 }
+
 .markdown-rendered mark
 {
     background-color: var(--text-highlight-bg) !important;
@@ -427,6 +431,11 @@ pre[class*="language-"]
 .mermaid .actor
 {
     fill: var(--mermaid-actor) !important;
+}
+
+.mermaid .loopLine
+{
+    stroke: var(--mermaid-loopline) !important;
 }
 
 .calendar .week-num
