@@ -167,11 +167,11 @@ body
     --checkbox-border-color-hover:   var(--light4);
     --checklist-done-color:          rgba(var(--light2_x), 0.5);
 
-    --table-header-background:       rgba(var(--dark3_x), 0.2);
-    --table-header-background-hover: var(--dark4);
-    --table-row-even-background:     rgba(var(--dark4_x), 0.4);
-    --table-row-odd-background:      rgba(var(--dark4_x), 0.6);
-    --table-row-background-hover:    var(--dark4);
+    --table-header-background:       rgba(var(--dark0_x), 0.2);
+    --table-header-background-hover: var(--dark2);
+    --table-row-even-background:     rgba(var(--dark2_x), 0.2);
+    --table-row-odd-background:      rgba(var(--dark2_x), 0.4);
+    --table-row-background-hover:    var(--dark2);
 
     --text-selection:                rgba(var(--neutral-red_x), 0.6);
     --flashing-background:           rgba(var(--neutral-red_x), 0.3);
@@ -265,10 +265,10 @@ body
     --checkbox-border-color-hover:   var(--light4);
     --checklist-done-color:          rgba(var(--dark2_x), 0.4);
 
-    --table-header-background:       rgba(var(--light3_x), 0.2);
+    --table-header-background:       rgba(var(--light3_x), 0.4);
     --table-header-background-hover: var(--light2);
-    --table-row-even-background:     rgba(var(--light2_x), 0.4);
-    --table-row-odd-background:      rgba(var(--light2_x), 0.6);
+    --table-row-even-background:     rgba(var(--light1_x), 0.2);
+    --table-row-odd-background:      rgba(var(--light1_x), 0.7);
     --table-row-background-hover:    var(--light2);
 
     --text-selection:                rgba(var(--neutral-red_x), 0.6);
