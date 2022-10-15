@@ -138,11 +138,11 @@ body
     --text-muted:                    var(--light2);
 
     --h1-color:                      var(--neutral-red);
-    --h2-color:                      var(--neutral-orange);
-    --h3-color:                      var(--neutral-yellow);
-    --h4-color:                      var(--neutral-green);
-    --h5-color:                      var(--neutral-aqua);
-    --h6-color:                      var(--neutral-blue);
+    --h2-color:                      var(--neutral-yellow);
+    --h3-color:                      var(--neutral-green);
+    --h4-color:                      var(--neutral-aqua);
+    --h5-color:                      var(--neutral-blue);
+    --h6-color:                      var(--neutral-purple);
 
     --text-highlight-bg:             var(--neutral-yellow);
     --text-highlight-fg:             var(--dark0-hard);
@@ -176,8 +176,8 @@ body
     --text-selection:                rgba(var(--neutral-red_x), 0.6);
     --flashing-background:           rgba(var(--neutral-red_x), 0.3);
 
+    --code-normal:                   var(--bright-blue);
     --code-background:               var(--dark1);
-    --code-normal:                   var(--light2);
 
     --mermaid-note:                  var(--neutral-blue);
 
@@ -236,11 +236,11 @@ body
     --text-muted:                    var(--dark2);
 
     --h1-color:                      var(--neutral-red);
-    --h2-color:                      var(--neutral-orange);
-    --h3-color:                      var(--neutral-yellow);
-    --h4-color:                      var(--neutral-green);
-    --h5-color:                      var(--neutral-aqua);
-    --h6-color:                      var(--neutral-blue);
+    --h2-color:                      var(--neutral-yellow);
+    --h3-color:                      var(--neutral-green);
+    --h4-color:                      var(--neutral-aqua);
+    --h5-color:                      var(--neutral-blue);
+    --h6-color:                      var(--neutral-purple);
 
     --text-highlight-bg:             var(--bright-yellow);
     --text-highlight-fg:             var(--dark0);
@@ -274,8 +274,8 @@ body
     --text-selection:                rgba(var(--neutral-red_x), 0.6);
     --flashing-background:           rgba(var(--neutral-red_x), 0.3);
 
+    --code-normal:                   var(--bright-blue);
     --code-background:               var(--light1);
-    --code-normal:                   var(--dark2);
 
     --mermaid-note:                  var(--bright-blue);
     --mermaid-actor:                 var(--light3);
@@ -317,13 +317,13 @@ thead
 th
 {
     font-weight: 600 !important;
-    border: 0px !important;
+    border: 1px solid var(--background-secondary) !important;
 }
 
 td
 {
-    border-left: 0px !important;
-    border-right: 0px !important;
+    border-left: 1px solid var(--background-secondary) !important;
+    border-right: 1px solid var(--background-secondary) !important;
     border-bottom: 1px solid var(--background-secondary) !important;
 }
 
