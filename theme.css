@@ -204,6 +204,9 @@ body
     --dataview-key-background:       rgba(var(--faded-red_x), 0.5);
     --dataview-value:                var(--text-faint);
     --dataview-value-background:     rgba(var(--neutral-green_x), 0.3);
+
+    --tab-text-color-focused-active:         var(--neutral-yellow);
+    --tab-text-color-focused-active-current: var(--bright-red);
 }
 
 .theme-light
@@ -304,6 +307,9 @@ body
     --dataview-key-background:       rgba(var(--faded-red_x), 0.3);
     --dataview-value:                var(--text-faint);
     --dataview-value-background:     rgba(var(--neutral-green_x), 0.2);
+
+    --tab-text-color-focused-active:         var(--neutral-yellow);
+    --tab-text-color-focused-active-current: var(--bright-red);
 }
 
 table
@@ -496,5 +502,10 @@ pre[class*="language-"]
     font-size: var(--font-smaller);
     color: var(--dataview-value) !important;
     background-color: var(--dataview-value-background) !important;
+}
+
+.suggestion-highlight
+{
+    color: var(--bright-red);
 }
 
