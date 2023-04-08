@@ -137,6 +137,8 @@ body
     --text-faint:                    var(--light1);
     --text-muted:                    var(--light2);
 
+    --link-url:                      var(--neutral-green);
+
     --h1-color:                      var(--neutral-red);
     --h2-color:                      var(--neutral-yellow);
     --h3-color:                      var(--neutral-green);
@@ -182,6 +184,7 @@ body
     --mermaid-note:                  var(--neutral-blue);
     --mermaid-actor:                 var(--dark2);
     --mermaid-loopline:              var(--neutral-blue);
+    --mermaid-exclude:               var(--dark4);
 
     --icon-color-hover:              var(--bright-red);
     --icon-color-focused:            var(--bright-blue);
@@ -240,6 +243,8 @@ body
     --text-faint:                    var(--dark3);
     --text-muted:                    var(--dark2);
 
+    --link-url:                      var(--neutral-green);
+
     --h1-color:                      var(--neutral-red);
     --h2-color:                      var(--neutral-yellow);
     --h3-color:                      var(--neutral-green);
@@ -285,6 +290,7 @@ body
     --mermaid-note:                  var(--bright-blue);
     --mermaid-actor:                 var(--light3);
     --mermaid-loopline:              var(--neutral-blue);
+    --mermaid-exclude:               var(--light2);
 
     --icon-color-hover:              var(--bright-red);
     --icon-color-focused:            var(--bright-blue);
@@ -354,8 +360,8 @@ td
 
 .markdown-rendered mark
 {
-    background-color: var(--text-highlight-bg) !important;
-    color: var(--text-highlight-fg) !important;
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
 }
 
 .markdown-rendered mark a
@@ -398,6 +404,16 @@ pre[class*="language-"]
     line-height: var(--line-height-tight) !important;
 }
 
+.cm-url
+{
+    color: var(--link-url) !important;
+}
+
+.cm-url:hover
+{
+    color: var(--text-accent-color) !important;
+}
+
 /* Keep highlight/marks the same between viewer and editor. */
 .cm-highlight
 {
@@ -412,11 +428,16 @@ pre[class*="language-"]
     padding: 0.1em 0.25em;
 }
 
-/* Keep list bullet padding the same between viewer and editor. */
+/*
+ * Keep list bullet padding the same between viewer and editor.
+ * This is annoying with the cursor in the editor as there is a gap.
+ */
+/*
 .cm-formatting-list
 {
     padding-right: 4px !important;
 }
+*/
 
 /*
  * Keep sub-list indenting the same between viewer and editor.
@@ -442,6 +463,11 @@ pre[class*="language-"]
 .mermaid .loopLine
 {
     stroke: var(--mermaid-loopline) !important;
+}
+
+.mermaid .exclude-range
+{
+    fill: var(--mermaid-exclude) !important;
 }
 
 .calendar .week-num
