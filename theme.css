@@ -553,3 +553,27 @@ pre[class*="language-"]
     color: var(--bright-red);
 }
 
+body {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.4;
+    /* Order as defined in app.css */
+    --callout-default: var(--neutral-blue_x);
+    --callout-note: var(--neutral-blue_x);
+    --callout-summary: var(--neutral-aqua_x);
+    --callout-info: var(--neutral-blue_x);
+    --callout-todo: var(--neutral-blue_x);
+    --callout-important: var(--neutral-aqua_x);
+    --callout-tip: var(--neutral-aqua_x);
+    --callout-success: var(--neutral-green_x);
+    --callout-question: var(--neutral-yellow_x);
+    --callout-warning: var(--neutral-orange_x);
+    --callout-fail: var(--neutral-red_x);
+    --callout-error: var(--neutral-red_x);
+    --callout-bug: var(--neutral-red_x);
+    --callout-example: var(--neutral-purple_x);
+    --callout-quote: var(--gray_x);
+}
+
+.callout {
+    background-color: rgba(var(--callout-color), 0.2);
+}
