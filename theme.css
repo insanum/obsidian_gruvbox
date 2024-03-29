@@ -88,7 +88,7 @@ body
     --link-decoration:                none;
     --link-decoration-hover:          none;
     --link-external-decoration:       none;
-    --link-external-decoration-hover: none;
+    --link-external-decoration-hover: underline;
 
     --tag-decoration:                 none;
     --tag-decoration-hover:           underline;
@@ -150,8 +150,8 @@ body
     --text-highlight-fg:             var(--dark0-hard);
 
     --text-accent:                   var(--neutral-orange);
-    --text-accent-hover:             var(--bright-aqua);
-
+    --text-accent-hover:             var(--bright-red);
+	
     --tag-color:                     var(--bright-aqua);
     --tag-background:                var(--dark2);
     --tag-background-hover:          var(--dark1);
@@ -257,7 +257,7 @@ body
     --text-highlight-fg:             var(--dark0);
 
     --text-accent:                   var(--neutral-orange);
-    --text-accent-hover:             var(--bright-aqua);
+    --text-accent-hover:             var(--bright-red);
 
     --tag-color:                     var(--neutral-aqua);
     --tag-background:                var(--light1);
@@ -334,19 +334,21 @@ thead
 th
 {
     font-weight: 600 !important;
-    border: 1px solid var(--background-secondary) !important;
+	text-align: center !important;
+    border: 1px solid var(--background-primary) !important;
+	background-color:  var(--background-primary) !important;
 }
 
 td
 {
-    border-left: 1px solid var(--background-secondary) !important;
-    border-right: 1px solid var(--background-secondary) !important;
-    border-bottom: 1px solid var(--background-secondary) !important;
+	border-left: 1px solid var(--background-primary) !important;
+    border-right: 1px solid var(--background-primary) !important;
+    border-bottom: 1px solid var(--background-primary) !important;
 }
 
 .markdown-rendered tbody tr:nth-child(even)
 {
-    background-color: var(--table-row-even-background) !important;
+    background-color: var(--background-primary) !important;
 }
 
 .markdown-rendered tbody tr:nth-child(odd)
@@ -371,6 +373,15 @@ td
     color: var(--red) !important;
     font-weight: 600;
 }
+
+.internal-link:hover {
+	text-decoration: underline !important;
+}
+
+.cm-underline:hover  {
+	text-decoration: underline !important;
+}
+
 
 .search-result-file-matched-text
 {
@@ -408,7 +419,7 @@ pre[class*="language-"]
 
 .cm-url
 {
-    color: var(--link-url) !important;
+    color: var(--link-ur) !important;
 }
 
 .cm-url:hover
