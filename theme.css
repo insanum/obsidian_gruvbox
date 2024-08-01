@@ -406,6 +406,11 @@ pre[class*="language-"]
     line-height: var(--line-height-tight) !important;
 }
 
+/* Missing Comments Color in Code Blocks */
+.cm-comment {
+    color: var(--gray)
+}
+
 .cm-url
 {
     color: var(--link-url) !important;
