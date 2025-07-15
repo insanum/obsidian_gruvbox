@@ -430,7 +430,7 @@ pre[class*="language-"]
     padding: 0.1em 0.25em;
 }
 
-.cm-line .cm-strong
+.cm-line .cm-strong.not(mark)
 {
     color: var(--bold-color) !important;
 }
