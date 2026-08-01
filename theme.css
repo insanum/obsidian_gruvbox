@@ -575,5 +575,5 @@ body {
 }
 
 .callout {
-    background-color: rgba(var(--callout-color), 0.2);
+    background-color: color-mix(in srgb, var(--callout-color) 20%, transparent);
 }
